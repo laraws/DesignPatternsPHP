@@ -24,7 +24,7 @@ class AbstractFactoryTest extends TestCase
      *
      * @param WriterFactory $writerFactory
      */
-    public function testCanCreateCsvWriterOnUnix(WriterFactory $writerFactory)
+    public function testCanCreateCsvWriterOnUnix(object $writerFactory)
     {
         $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
         $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
