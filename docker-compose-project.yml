@@ -2,8 +2,8 @@ version: '3'
 services:
 
   #PHP Service
-  app-design:
-    image: php:laravel-docker
+  app:
+    image: laraws/php:latest
     container_name: app-design
     restart: unless-stopped
     tty: true
